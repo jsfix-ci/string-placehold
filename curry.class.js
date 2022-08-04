@@ -36,7 +36,7 @@ Curry.prototype.interpolate = function () {
 };
 
 Curry.prototype.interpolateClosure = function () {
-  return _.callback(this.interpolate, this);
+  return _.iteratee(this.interpolate.bind(this));
 };
 
 module.exports = Curry;

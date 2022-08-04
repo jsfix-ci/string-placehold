@@ -24,7 +24,7 @@ Placeholded.prototype.mapTokensToValues = function (map) {
 
 
 Placeholded.prototype.unprovidedTokens = function (map) {
-  var diff = _.difference(_.unique(this.tokens), _.keys(map));
+  var diff = _.difference(_.uniq(this.tokens), _.keys(map));
   return _.isEmpty(diff)? false : diff;
 };
 
