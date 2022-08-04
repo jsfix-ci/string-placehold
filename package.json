@@ -24,7 +24,7 @@
   "homepage": "https://github.com/peey/string-placehold",
   "license": "MIT",
   "dependencies": {
-    "lodash": "^3.10.0"
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "mocha": "^9.2.2"

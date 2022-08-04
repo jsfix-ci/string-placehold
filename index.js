@@ -3,7 +3,7 @@ var Placeholded = require("./placeholded.class.js");
 var Curry = require("./curry.class.js");
 
 var closure = function (placeholded) {
-  var result = _.callback(placeholded.interpolate, placeholded);
+  var result = _.iteratee(placeholded.interpolate.bind(placeholded));
   
   result.curry = function () {
     var curry =  new Curry(placeholded);
